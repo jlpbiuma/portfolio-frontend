@@ -1,38 +1,55 @@
 "use client"
 
+// React core imports
 import { useState, useEffect } from "react";
 
+// Custom hooks
+import { useLanguage } from "@/app/providers/language-provider";
+
+// Page Components
+import HeroSection from "@/components/hero-section";
+import ExperienceSection from "@/components/experience-section";
+import ProjectsSection from "@/components/projects-section";
+import EducationSection from "@/components/education-section";
+import SkillsSection from "@/components/skills-section";
+import Controls from "@/components/controls";
+import Background from "@/components/background";
+
 export default function Home() {
-  const [clickCount, setClickCount] = useState(0);
-  const [lastClickTime, setLastClickTime] = useState<string>("");
+  const [mounted, setMounted] = useState(false);
+  const { t } = useLanguage();
 
   useEffect(() => {
-    // Add a breakpoint here to test the debugger
-    console.log("Component mounted, click count:", clickCount);
+    setMounted(true);
+  }, []);
 
-    return () => {
-      console.log("Component will unmount");
-    };
-  }, [clickCount]);
-
-  const handleClick = () => {
-    // Add a breakpoint here to test the debugger
-    setClickCount(prev => prev + 1);
-    setLastClickTime(new Date().toLocaleTimeString());
-  };
+  if (!mounted) {
+    return null;
+  }
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen gap-4">
-      <button
-        onClick={handleClick}
-        className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
-      >
-        Click me!
-      </button>
-      <div className="text-center">
-        <p>Clicked: {clickCount} times</p>
-        {lastClickTime && <p>Last click: {lastClickTime}</p>}
-      </div>
-    </div>
+    <>
+      <Background />
+      <main className="relative min-h-screen p-8 md:p-16 max-w-6xl mx-auto">
+        <Controls />
+        <HeroSection {...t.hero} />
+        <ExperienceSection
+          title={t.experience.title}
+          items={t.experience.items}
+        />
+        <ProjectsSection
+          title={t.projects.title}
+          projects={t.projects.items}
+        />
+        <EducationSection
+          title={t.education.title}
+          items={t.education.items}
+        />
+        <SkillsSection
+          title={t.skills.title}
+          categories={t.skills.categories}
+        />
+      </main>
+    </>
   );
 }
