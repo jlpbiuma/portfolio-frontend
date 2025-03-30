@@ -16,6 +16,14 @@ const technologiesIcons = {
     "Git": "/icons/git.png",
     "Docker": "/icons/docker.png",
     "Jenkins": "/icons/jenkins.png",
+    "Recharts": "/icons/recharts.png",
+    "Flask": "/icons/flask.png",
+    "MongoDB": "/icons/mongodb.svg",
+    "MySQL": "/icons/mysql.png",
+    "Arduino": "/icons/arduino.png",
+    "Raspberry Pi": "/icons/raspberry.webp",
+    "Express": "/icons/express.png",
+    "Vue.js": "/icons/vuejs.png",
 }
 
 export default function BadgeIcon({

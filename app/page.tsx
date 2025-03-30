@@ -14,6 +14,7 @@ import EducationSection from "@/components/education-section";
 import SkillsSection from "@/components/skills-section";
 import Controls from "@/components/controls";
 import Background from "@/components/background";
+import ContactSection from "@/components/contact-section";
 
 export default function Home() {
   const [mounted, setMounted] = useState(false);
@@ -48,6 +49,10 @@ export default function Home() {
         <SkillsSection
           title={t.skills.title}
           categories={t.skills.categories}
+        />
+        <ContactSection
+          title={t.contact.title}
+          items={t.contact.items}
         />
       </main>
     </>

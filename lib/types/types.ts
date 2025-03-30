@@ -1,4 +1,3 @@
-
 export interface Project {
     title: string;
     description: string;
@@ -27,9 +26,12 @@ export interface ProjectsSectionProps {
 
 export interface ContactSectionProps {
     title: string;
-    subtitle: string;
-    cta: string;
-    email: string;
+    items: {
+        type: 'email' | 'phone' | 'location' | 'linkedin' | 'github';
+        label: string;
+        value: string;
+        link: string;
+    }[];
 }
 
 export interface EducationProps {
@@ -40,6 +42,7 @@ export interface EducationProps {
         period: string;
         location: string;
         achievements: string[];
+        image?: string;
     }[];
 }
 
@@ -52,6 +55,7 @@ export interface ExperienceProps {
         location: string;
         description: string;
         achievements: string[];
+        image?: string;
     }[];
 }
 

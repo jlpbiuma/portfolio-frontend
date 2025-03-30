@@ -75,5 +75,34 @@ export const en = {
       },
       // Add more projects...
     ]
+  },
+  contact: {
+    title: "Contact Information",
+    items: [
+        {
+            type: "email",
+            label: "Email",
+            value: "your.email@example.com",
+            link: "mailto:your.email@example.com"
+        },
+        {
+            type: "linkedin",
+            label: "LinkedIn",
+            value: "linkedin.com/in/yourprofile",
+            link: "https://linkedin.com/in/yourprofile"
+        },
+        {
+            type: "github",
+            label: "GitHub",
+            value: "github.com/yourusername",
+            link: "https://github.com/yourusername"
+        },
+        {
+            type: "location",
+            label: "Location",
+            value: "San Francisco, CA",
+            link: "https://maps.google.com/?q=San+Francisco+CA"
+        }
+    ]
   }
 }; 
