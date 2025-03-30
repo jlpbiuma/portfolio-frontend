@@ -20,7 +20,7 @@ export const es = {
         company: "Fundación Universitaria de Las Palmas de Gran Canaria",
         period: "2023 - Presente",
         location: "Las Palmas de Gran Canaria, España",
-        description: "Lideré el desarrollo de múltiples proyectos de alto impacto...",
+        description: "Desarrolland junto al departamento de sistemas",
         achievements: [
           "Creación de aplicaciones web y móviles",
           "Desarrollo de API",

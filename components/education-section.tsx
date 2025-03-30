@@ -11,52 +11,50 @@ export default function EducationSection({ title, items }: EducationProps) {
             <h2 className="text-3xl font-bold mb-8">{title}</h2>
             <div className="space-y-6">
                 {items.map((item, index) => (
-                    <Card
-                        key={index}
-                        className={cn(
-                            "transition-all duration-300 overflow-hidden",
-                            styles.glass
-                        )}
-                    >
-                        <CardHeader>
-                            <CardTitle className="flex justify-between items-start">
-                                <div className="flex gap-4 items-center">
+                    <Card key={index} className={cn("transition-all duration-300 overflow-hidden", styles.glass)}>
+                        <CardHeader className="pb-3">
+                            <CardTitle className="flex flex-col gap-4">
+                                {/* Top section with image and degree */}
+                                <div className="flex gap-3">
                                     {item.image ? (
-                                        <div className="relative h-12 w-12 flex-shrink-0">
-                                            <Image
-                                                src={item.image}
-                                                alt={item.institution}
-                                                fill
-                                                className="object-contain"
-                                            />
+                                        <div className="relative h-12 w-12 flex-shrink-0 mt-1">
+                                            <Image src={item.image || "/placeholder.svg"} alt={item.institution} fill className="object-contain" />
                                         </div>
                                     ) : (
-                                        <GraduationCap className="h-12 w-12" />
+                                        <GraduationCap className="h-12 w-12 flex-shrink-0 mt-1" />
                                     )}
-                                    <div>
-                                        <div className="flex items-center gap-2">
-                                            <h3 className="text-xl font-bold">{item.degree}</h3>
-                                        </div>
-                                        <p className="text-lg text-muted-foreground">{item.institution}</p>
+                                    <div className="min-w-0 flex-grow">
+                                        <h3 className="text-xl font-bold leading-tight break-words">{item.degree}</h3>
+                                        <p className="text-lg text-muted-foreground break-words mt-1">{item.institution}</p>
                                     </div>
                                 </div>
-                                <div className="text-right text-muted-foreground">
+
+                                {/* Metadata section */}
+                                <div className="flex flex-wrap gap-y-2 gap-x-4 text-muted-foreground">
                                     <div className="flex items-center gap-2">
-                                        <Calendar className="h-4 w-4" />
+                                        <Calendar className="h-4 w-4 flex-shrink-0" />
                                         <span>{item.period}</span>
                                     </div>
                                     <div className="flex items-center gap-2">
-                                        <MapPin className="h-4 w-4" />
-                                        <span>{item.location}</span>
+                                        <MapPin className="h-4 w-4 flex-shrink-0" />
+                                        <span className="break-words">{item.location}</span>
                                     </div>
                                 </div>
                             </CardTitle>
                         </CardHeader>
+
                         {item.achievements.length > 0 && (
                             <CardContent>
-                                <ul className="list-disc list-inside space-y-2">
+                                <ul
+                                    className={cn(
+                                        "list-disc list-inside space-y-2",
+                                        "md:block", // Always visible on medium screens and up
+                                    )}
+                                >
                                     {item.achievements.map((achievement, i) => (
-                                        <li key={i}>{achievement}</li>
+                                        <li key={i} className="break-words pl-1">
+                                            <span className="pl-2">{achievement}</span>
+                                        </li>
                                     ))}
                                 </ul>
                             </CardContent>
