@@ -3,6 +3,15 @@ import "./background-particle.css";
 import { useEffect } from "react";
 import { useTheme } from "next-themes";
 
+// Add type declarations for particles.js
+declare global {
+    interface Window {
+        particlesJS: any;
+        pJSDom: any[];
+    }
+}
+
+
 export default function ParticlesBackground() {
     const { theme, resolvedTheme } = useTheme();
 
