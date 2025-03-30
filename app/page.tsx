@@ -13,7 +13,8 @@ import ProjectsSection from "@/components/projects-section";
 import EducationSection from "@/components/education-section";
 import SkillsSection from "@/components/skills-section";
 import Controls from "@/components/controls";
-import Background from "@/components/background";
+// import Background from "@/components/backgrounds/background";
+import ParticlesBackground from "@/components/backgrounds/background-particle";
 import ContactSection from "@/components/contact-section";
 
 export default function Home() {
@@ -30,7 +31,7 @@ export default function Home() {
 
   return (
     <>
-      <Background />
+      <ParticlesBackground />
       <main className="relative min-h-screen p-8 md:p-16 max-w-6xl mx-auto">
         <Controls />
         <HeroSection {...t.hero} />

@@ -27,7 +27,7 @@ export interface ProjectsSectionProps {
 export interface ContactSectionProps {
     title: string;
     items: {
-        type: 'email' | 'phone' | 'location' | 'linkedin' | 'github';
+        type: string;
         label: string;
         value: string;
         link: string;
