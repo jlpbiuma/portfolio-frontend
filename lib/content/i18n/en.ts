@@ -116,7 +116,7 @@ export const en = {
         title: "Portfolio Website",
         description: "A personal portfolio built with Next.js and shadcn/ui components",
         technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS", "shadcn/ui", "JavaScript"],
-        link: "https://github.com/yourusername/portfolio"
+        link: "https://github.com/jlpbiuma/portfolio"
       },
       {
         title: "Air Quality Monitoring Platform",

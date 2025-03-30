@@ -117,7 +117,7 @@ export const es = {
         title: "Sitio Web Portfolio",
         description: "Un portafolio personal construido con Next.js y componentes shadcn/ui",
         technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS", "shadcn/ui", "JavaScript"],
-        link: "https://github.com/yourusername/portfolio"
+        link: "https://github.com/jlpbiuma/portfolio"
       },
       {
         title: "Air Quality Monitoring Platform",
