@@ -1,6 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Mail, Phone, MapPin, Linkedin, Github } from "lucide-react";
-import type { ContactSectionProps } from "@/lib/types/types";
+import type { ContactSectionProps, Contact } from "@/lib/types/types";
 import styles from '@/styles/glass.module.css';
 import { cn } from "@/lib/utils";
 
@@ -10,34 +10,39 @@ export default function ContactSection({ title, items }: ContactSectionProps) {
             <h2 className="text-3xl font-bold mb-8">{title}</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {items.map((item, index) => (
-                    <Card
-                        key={index}
-                        className={cn(
-                            "transition-all duration-300 overflow-hidden",
-                            styles.glass
-                        )}
-                    >
-                        <CardHeader>
-                            <CardTitle className="flex items-center gap-3">
-                                {getContactIcon(item.type)}
-                                <span>{item.label}</span>
-                            </CardTitle>
-                        </CardHeader>
-                        <CardContent>
-                            <a
-                                href={item.link}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="text-muted-foreground hover:text-foreground transition-colors"
-                            >
-                                {item.value}
-                            </a>
-                        </CardContent>
-                    </Card>
+                    <ContactItem key={index} {...item} />
                 ))}
             </div>
         </section>
     );
+}
+
+const ContactItem = ({ type, label, value, link }: Contact) => {
+    return (
+        <Card
+            className={cn(
+                "transition-all duration-300 overflow-hidden",
+                styles.glass
+            )}
+        >
+            <CardHeader>
+                <CardTitle className="flex items-center gap-3">
+                    {getContactIcon(type)}
+                    <span>{label}</span>
+                </CardTitle>
+            </CardHeader>
+            <CardContent>
+                <a
+                    href={link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-muted-foreground hover:text-foreground transition-colors"
+                >
+                    {value}
+                </a>
+            </CardContent>
+        </Card>
+    )
 }
 
 function getContactIcon(type: string) {

@@ -2,7 +2,8 @@ export const es = {
   hero: {
     name: "José Luis Pordomingo",
     role: "Software and Data Engineer 🧑🏻‍💻📊 | Ingeniero Industrial en Electrónica y Automática ⚡⚙️ | Fullstack and IoT Dev 🖥️",
-    welcome: "Hola!! Me llamo José Luis Soy Ingeniero en Electrónica y Automática Industrial con Máster en Electrónica y Telecomunicaciones Aplicadas. Más adelante realicé un curso de FullStack Developer que me permitió expandir mis conocimientos y cubrir los niveles OSI. Soy una persona trabajadora, dispuesto a aprender nuevas tecnologías continuamente. Además soy curioso e inquieto y me gusta hacer proyectos por mi cuenta. Si has llegado hasta aquí, no dudes en contactar conmigo (jlpordomingobrito@gmail.com) o mandarme cualquier mensaje a mi perfil."
+    welcome: "Hola!! Me llamo José Luis Soy Ingeniero en Electrónica y Automática Industrial con Máster en Electrónica y Telecomunicaciones Aplicadas. Más adelante realicé un curso de FullStack Developer que me permitió expandir mis conocimientos y cubrir los niveles OSI. Soy una persona trabajadora, dispuesto a aprender nuevas tecnologías continuamente. Además soy curioso e inquieto y me gusta hacer proyectos por mi cuenta. Si has llegado hasta aquí, no dudes en contactar conmigo (jlpordomingobrito@gmail.com) o mandarme cualquier mensaje a mi perfil.",
+    download: "Descargar CV"
   },
   nav: {
     experience: "Experiencia",
@@ -29,7 +30,8 @@ export const es = {
           "Despliegue de aplicaciones FullStack contenerizadas y gestión de sistemas",
           "Data mining, ETL, pattern searchs",
           "Modelos de clasificación",
-          "Entrenamiento y testeo de CNN y RNN"
+          "Entrenamiento y testeo de CNN y RNN",
+          "Sistema de recomendación"
         ],
         image: "/images/fulp.png"
       },
@@ -84,15 +86,27 @@ export const es = {
     categories: [
       {
         name: "Frontend",
-        items: ["React", "Next.js", "TypeScript", "Tailwind CSS"]
+        items: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Vue.js", "JavaScript", "Flutter", "Dart"]
       },
       {
         name: "Backend",
-        items: ["Node.js", "Python", "PostgreSQL", "AWS"]
+        items: ["Node.js", "Flask", "PostgreSQL", "AWS", "Laravel", "Express", "Firebase", "Oracle", ".NET"]
       },
       {
         name: "Herramientas y Métodos",
-        items: ["Git", "Docker", "Jenkins"]
+        items: ["Git", "Docker", "Jenkins", "Wireshark", "Postman", "Adobe Premiere", "Autocad"]
+      },
+      {
+        name: "Hardware",
+        items: ["Arduino", "Raspberry Pi", "ESP32", "Proteus", "LTspice"]
+      },
+      {
+        name: "Data Science",
+        items: ["Python", "Numpy", "Pandas", "Keras", "TensorFlow", "Power BI", "Jupyter Notebook"]
+      },
+      {
+        name: "IA y LLMs",
+        items: ["Hugging Face", "Ollama", "OpenAI", "Cursor", "v0"]
       }
     ]
   },

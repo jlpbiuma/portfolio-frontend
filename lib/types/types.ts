@@ -9,14 +9,17 @@ export interface HeroSectionProps {
     name: string;
     role: string;
     welcome: string;
+    download: string;
 }
 
 export interface SkillsProps {
     title: string;
-    categories: {
-        name: string;
-        items: string[];
-    }[];
+    categories: Skill[];
+}
+
+export interface Skill {
+    name: string;
+    items: string[];
 }
 
 export interface ProjectsSectionProps {
@@ -26,37 +29,43 @@ export interface ProjectsSectionProps {
 
 export interface ContactSectionProps {
     title: string;
-    items: {
-        type: string;
-        label: string;
-        value: string;
-        link: string;
-    }[];
+    items: Contact[];
+}
+
+export interface Contact {
+    type: string;
+    label: string;
+    value: string;
+    link: string;
 }
 
 export interface EducationProps {
     title: string;
-    items: {
-        degree: string;
-        institution: string;
-        period: string;
-        location: string;
-        achievements: string[];
-        image?: string;
-    }[];
+    items: Education[];
+}
+
+export interface Education {
+    degree: string;
+    institution: string;
+    period: string;
+    location: string;
+    achievements: string[];
+    image?: string;
 }
 
 export interface ExperienceProps {
     title: string;
-    items: {
-        role: string;
-        company: string;
-        period: string;
-        location: string;
-        description: string;
-        achievements: string[];
-        image?: string;
-    }[];
+    items: Experience[];
+}
+
+export interface Experience {
+    role: string;
+    company: string;
+    period: string;
+    location: string;
+    description: string;
+    achievements: string[];
+    image?: string;
 }
 
 export interface BadgeIconProps {
