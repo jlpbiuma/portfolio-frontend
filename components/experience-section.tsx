@@ -28,7 +28,7 @@ const ExperienceItem = ({ role, company, period, location, description, achievem
                         <div className="flex gap-4 items-start">
                             {image ? (
                                 <div className="relative h-12 w-12 flex-shrink-0 mt-1">
-                                    <Image src={image || "/placeholder.svg"} alt={company} fill className="object-contain" />
+                                    <Image src={image || "/placeholder.svg"} alt={company} fill className="object-contain" sizes="100%" />
                                 </div>
                             ) : (
                                 <Building2 className="h-12 w-12 flex-shrink-0 mt-1" />

@@ -1,3 +1,5 @@
+import { ReactNode } from 'react';
+
 export interface Project {
     title: string;
     description: string;
@@ -71,4 +73,29 @@ export interface Experience {
 export interface BadgeIconProps {
     tech: string;
     techIndex: number;
+}
+
+export interface ExperimentSectionProps {
+    title: string;
+    items: ExperimentItem[];
+}
+
+export type ExperimentItem = {
+    title: string;
+    description: string;
+    component: React.LazyExoticComponent<React.ComponentType<any>>;
+}
+
+export interface ChartDataPoint {
+    time: string
+    temperature: number
+    humidity: number
+    pressure: number
+}
+
+export interface SensorData {
+    temperature: string
+    humidity: string
+    pressure: string
+    timestamp: string
 }

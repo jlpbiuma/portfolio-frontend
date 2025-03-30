@@ -8,14 +8,15 @@ export default function HeroSection({ name, role, welcome, download }: HeroSecti
     return (
         <section className="container mx-auto px-4">
             <div className="flex flex-col md:flex-row items-center gap-8 mb-4">
-                <div className="w-full md:w-[40%] flex justify-center md:justify-start">
-                    <div className="relative w-48 h-48 md:w-64 md:h-64">
+                <div className="w-full md:w-[50%] flex justify-center md:justify-start">
+                    <div className="relative w-32 h-48 md:w-48 md:h-72 lg:w-64 lg:h-96">
                         <Image
-                            src="/imagen_perfil.jpeg"
+                            src="/imagen_hero.jpg"
                             alt="Profile Picture"
                             fill
-                            className="rounded-full object-cover border-4 border-primary shadow-lg"
+                            className="rounded-sm object-cover shadow-lg"
                             priority
+                            sizes="(max-width: 768px) 12rem, (max-width: 1024px) 18rem, 24rem"
                         />
                     </div>
                 </div>

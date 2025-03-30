@@ -1,3 +1,5 @@
+import { lazy } from 'react';
+
 export const es = {
   hero: {
     name: "José Luis Pordomingo",
@@ -11,7 +13,8 @@ export const es = {
     education: "Educación",
     skills: "Habilidades",
     viewProject: "Ver Proyecto",
-    viewMore: "Ver Más"
+    viewMore: "Ver Más",
+    experiment: "Experimentos"
   },
   experience: {
     title: "Experiencia Profesional",
@@ -165,6 +168,16 @@ export const es = {
         label: "Ubicación",
         value: "Las Palmas de Gran Canaria, España",
         link: "https://maps.google.com/?q=Las+Palmas+de+Gran+Canaria+España"
+      }
+    ]
+  },
+  experiment: {
+    title: "Sección de Experimentos",
+    items: [
+      {
+        title: "Gráfico a tiempo real de datos de sensores",
+        description: "Gráfica a tiempo real empleando Socket.IO y Chart.js para visualizar datos de sensores simulados",
+        component: lazy(() => import("@/components/subcomponents/sensor-data-component"))
       }
     ]
   }

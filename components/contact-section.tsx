@@ -19,29 +19,29 @@ export default function ContactSection({ title, items }: ContactSectionProps) {
 
 const ContactItem = ({ type, label, value, link }: Contact) => {
     return (
-        <Card
-            className={cn(
-                "transition-all duration-300 overflow-hidden",
-                styles.glass
-            )}
+        <a
+            href={link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-muted-foreground hover:text-foreground transition-colors"
         >
-            <CardHeader>
-                <CardTitle className="flex items-center gap-3">
-                    {getContactIcon(type)}
-                    <span>{label}</span>
-                </CardTitle>
-            </CardHeader>
-            <CardContent>
-                <a
-                    href={link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-muted-foreground hover:text-foreground transition-colors"
-                >
+            <Card
+                className={cn(
+                    "transition-all duration-300 overflow-hidden",
+                    styles.glass
+                )}
+            >
+                <CardHeader>
+                    <CardTitle className="flex items-center gap-3">
+                        {getContactIcon(type)}
+                        <span>{label}</span>
+                    </CardTitle>
+                </CardHeader>
+                <CardContent>
                     {value}
-                </a>
-            </CardContent>
-        </Card>
+                </CardContent>
+            </Card>
+        </a>
     )
 }
 

@@ -1,3 +1,6 @@
+import { lazy } from 'react';
+
+
 export const en = {
   hero: {
     name: "José Luis Pordomingo",
@@ -164,6 +167,16 @@ export const en = {
         label: "Location",
         value: "Las Palmas de Gran Canaria, Spain",
         link: "https://maps.google.com/?q=Las+Palmas+de+Gran+Canaria+Spain"
+      }
+    ]
+  },
+  experiment: {
+    title: "Experiments",
+    items: [
+      {
+        title: "Real time data graph",
+        description: "Real time data graph using Socket.IO and Recharts",
+        component: lazy(() => import("@/components/subcomponents/sensor-data-component"))
       }
     ]
   }

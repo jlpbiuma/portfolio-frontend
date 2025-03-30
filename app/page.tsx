@@ -13,9 +13,9 @@ import ProjectsSection from "@/components/projects-section";
 import EducationSection from "@/components/education-section";
 import SkillsSection from "@/components/skills-section";
 import Controls from "@/components/controls";
-// import Background from "@/components/backgrounds/background";
 import ParticlesBackground from "@/components/backgrounds/background-particle";
 import ContactSection from "@/components/contact-section";
+import ExperimentSection from "@/components/experiment-section";
 
 export default function Home() {
   const [mounted, setMounted] = useState(false);
@@ -46,6 +46,10 @@ export default function Home() {
         <EducationSection
           title={t.education.title}
           items={t.education.items}
+        />
+        <ExperimentSection
+          title={t.experiment.title}
+          items={t.experiment.items}
         />
         <SkillsSection
           title={t.skills.title}

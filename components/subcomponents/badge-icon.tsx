@@ -60,8 +60,8 @@ export default function BadgeIcon({
                 <Image
                     src={technologiesIcons[tech as keyof typeof technologiesIcons]}
                     alt={`${tech} icon`}
-                    width={16}
                     height={16}
+                    width={16}
                 />
             )}
             {tech}
