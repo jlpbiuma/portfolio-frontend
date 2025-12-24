@@ -88,28 +88,56 @@ export const es = {
     title: "Habilidades y Tecnologías",
     categories: [
       {
+        name: "Lenguajes de programación",
+        items: ["Python", "TypeScript", "Java", "JavaScript", "C", "C++", "C#", "PHP", "Dart", "R"]
+      },
+      {
         name: "Frontend",
-        items: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Vue.js", "JavaScript", "Flutter", "Dart"]
+        items: ["Next.js", "React", "VueJS", "Axios", "Tailwind", "Shadcn", "Flutter"]
       },
       {
         name: "Backend",
-        items: ["Node.js", "Flask", "PostgreSQL", "AWS", "Laravel", "Express", "Firebase", "Oracle", ".NET"]
+        items: ["Laravel", "Springboot", "FastAPI", "Flask", "Django", "NodeJS", ".NET"]
       },
       {
-        name: "Herramientas y Métodos",
-        items: ["Git", "Docker", "Jenkins", "Wireshark", "Postman", "Adobe Premiere", "Autocad"]
+        name: "Bases de datos",
+        items: ["MongoDB", "Firebase", "MySQL", "PostgreSQL", "Oracle"]
+      },
+      {
+        name: "IA y Datos",
+        items: ["PaddleOCR", "Keras", "PyTorch", "Hugging Face", "Tensorflow", "Matlab", "RStudio", "PowerBI", "Sklearn"]
+      },
+      {
+        name: "LLM y Automatizaciones",
+        items: ["N8N", "OpenRouter", "Ollama", "LangGraph"]
+      },
+      {
+        name: "DevOps",
+        items: ["Docker", "Docker compose", "Jenkins", "GitHub Actions", "Pytest"]
+      },
+      {
+        name: "Cloud",
+        items: ["AWS", "Azure", "GCP"]
+      },
+      {
+        name: "Ingeniería",
+        items: ["AutoCAD", "Wireshark", "Wokwi"]
       },
       {
         name: "Hardware",
-        items: ["Arduino", "Raspberry Pi", "ESP32", "Proteus", "LTspice"]
+        items: ["Raspberry Pi", "Arduino", "ESP32", "Proteus", "LTspice"]
       },
       {
-        name: "Data Science",
-        items: ["Python", "Numpy", "Pandas", "Keras", "TensorFlow", "Power BI", "Jupyter Notebook"]
+        name: "Control de versiones",
+        items: ["Git", "GitHub", "BitBucket"]
       },
       {
-        name: "IA y LLMs",
-        items: ["Hugging Face", "Ollama", "OpenAI", "Cursor", "v0"]
+        name: "Ofimática",
+        items: ["Word", "Excel", "Power Point", "OneDrive", "Google Drive"]
+      },
+      {
+        name: "IDEs",
+        items: ["Cursor", "Visual Studio Code", "Google Antigravity", "Android Studio"]
       }
     ]
   },
@@ -140,6 +168,12 @@ export const es = {
         technologies: ["Vue.js", "JavaScript", "Tailwind CSS", "MongoDB", "Express", "Node.js"],
         link: "https://github.com/jlpbiuma/P3-Reparaciones-Front"
       },
+      {
+        title: "Retail Analytics",
+        description: "Aplicación demo que simula un eCommerce con un agente IA básico",
+        technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS", "shadcn/ui", "PostgreSQL", "Python", "N8N", "FastAPI"],
+        link: "https://github.com/jlpbiuma/retail-analytics-demo"
+      }
     ]
   },
   contact: {

@@ -87,28 +87,56 @@ export const en = {
     title: "Skills and Technologies",
     categories: [
       {
+        name: "Programming Languages",
+        items: ["Python", "TypeScript", "Java", "JavaScript", "C", "C++", "C#", "PHP", "Dart", "R"]
+      },
+      {
         name: "Frontend",
-        items: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Vue.js", "JavaScript", "Flutter", "Dart"]
+        items: ["Next.js", "React", "Vue.js", "Axios", "Tailwind CSS", "shadcn/ui", "Flutter"]
       },
       {
         name: "Backend",
-        items: ["Node.js", "Flask", "PostgreSQL", "AWS", "Laravel", "Express", "Firebase", "Oracle", ".NET"]
+        items: ["Laravel", "SpringBoot", "FastAPI", "Flask", "Django", "Node.js", ".NET"]
       },
       {
-        name: "Tools and Methods",
-        items: ["Git", "Docker", "Jenkins", "Wireshark", "Postman", "Adobe Premiere", "Autocad"]
+        name: "Databases",
+        items: ["MongoDB", "Firebase", "MySQL", "PostgreSQL", "Oracle"]
+      },
+      {
+        name: "AI & Data",
+        items: ["PaddleOCR", "Keras", "PyTorch", "Hugging Face", "TensorFlow", "Matlab", "RStudio", "Power BI", "Scikit-Learn"]
+      },
+      {
+        name: "LLMs & Automation",
+        items: ["N8N", "OpenRouter", "Ollama", "LangGraph", "LangChain"]
+      },
+      {
+        name: "DevOps",
+        items: ["Docker", "Docker Compose", "Jenkins", "GitHub Actions", "Pytest"]
+      },
+      {
+        name: "Cloud",
+        items: ["AWS", "Azure", "GCP"]
+      },
+      {
+        name: "Engineering",
+        items: ["AutoCAD", "Wireshark", "Wokwi"]
       },
       {
         name: "Hardware",
-        items: ["Arduino", "Raspberry Pi", "ESP32", "Proteus", "LTspice"]
+        items: ["Raspberry Pi", "Arduino", "ESP32", "Proteus", "LTspice"]
       },
       {
-        name: "Data Science",
-        items: ["Python", "Numpy", "Pandas", "Keras", "TensorFlow", "Power BI", "Jupyter Notebook"]
+        name: "Version Control",
+        items: ["Git", "GitHub", "BitBucket"]
       },
       {
-        name: "AI and LLMs",
-        items: ["Hugging Face", "Ollama", "OpenAI", "Cursor", "v0"]
+        name: "Office Suite",
+        items: ["Word", "Excel", "Power Point", "OneDrive", "Google Drive"]
+      },
+      {
+        name: "IDEs",
+        items: ["Cursor", "Visual Studio Code", "Google Antigravity", "Android Studio"]
       }
     ]
   },
